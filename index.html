@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!--========= Basic Page Needs =========-->
@@ -7,13 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
   <!--========== Specific Meta ==========-->
   <meta name="author" content="Joshua Onyenwere">
   <meta name="description"
     content="Find out what Chi Josh, is working on these days and how he can help you as a Product Designer">
 
-  <!--======== Font icon Css ============-->
-  <link href="./assets/favicon.ico" rel="icon">
+  <!--========== Favicons =========-->
+  <link href="./favicon.ico" rel="icon">
 
   <!--======== Page Title===========-->
   <title>Chi Josh, Helsinki Full Stack Developer + UX Product Designer</title>
@@ -25,6 +28,7 @@
 <body>
   <!--====Header Area
     ================================-->
+  <!--====Navigation area===========-->
   <header>
     <nav class="navbar navbar-default active">
       <div class="container">
@@ -37,7 +41,8 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="./index.html" title="">
-            <img src="./assets/images/mashup-icon.svg" class="navbar-logo-img" alt="">
+            <!--/.logo-->
+            <img src="/images/jo-logo.svg" class="navbar-logo-img" alt="">
             Chi Josh
           </a>
         </div>
@@ -48,7 +53,7 @@
             <li><a href="./project.html" title="">Project</a></li>
             <li>
               <p>
-                <a href="./components.html" class="btn btn-default navbar-btn" title="">Blog</a>
+                <a href="./blog.html" class="btn btn-default navbar-btn" title="">Blog</a>
               </p>
             </li>
 
@@ -57,34 +62,243 @@
       </div>
     </nav>
   </header>
-  <p>My Portfolio</p>
-  <main class="main">
-    <div class="clockbox">
-      <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
-        <g id="face">
-          <circle class="circle" cx="300" cy="300" r="253.9" />
-          <path class="hour-marks"
-            d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6" />
-          <circle class="mid-circle" cx="300" cy="300" r="16.2" />
-        </g>
-        <g id="hour">
-          <path class="hour-arm" d="M300.5 298V142" />
-          <circle class="sizing-box" cx="300" cy="300" r="253.9" />
-        </g>
-        <g id="minute">
-          <path class="minute-arm" d="M300.5 298V67" />
-          <circle class="sizing-box" cx="300" cy="300" r="253.9" />
-        </g>
-        <g id="second">
-          <path class="second-arm" d="M300.5 350V55" />
-          <circle class="sizing-box" cx="300" cy="300" r="253.9" />
-        </g>
-      </svg>
-    </div><!-- .clockbox -->
-    <nav class="navbar fixed-bottom navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">© Copyright 2019</a>
-    </nav>
-  </main>
+
+  <!--====Header Area
+        ================================-->
+
+  <div class="hero-full-container background-image-container white-text-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>My Portfolio</h1>
+          <p>WELCOME TO MY WEBSITE. HOPE YOU LOVE IT HERE.</p>
+          <br>
+          <a href="./project.html" class="btn btn-default btn-lg" title="">Discover</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus at sem quis varius.
+              <br>
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus
+              iaculis magna sagittis elit sagittis, at hendrerit lorem venenatis. Morbi accumsan iaculis blandit. Cras
+              ultrices hendrerit nisl.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+
+
+          <div id="carousel-example-generic" class="carousel carousel-fade slide" data-ride="carousel">
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="item active">
+                <img class="img-responsive" src="/images/img-06.jpg" alt="First slide">
+                <div class="carousel-caption card-shadow reveal">
+
+                  <h3>Moon</h3>
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <p>
+                    Sed id tellus in risus pre
+                    tium imperdiet eu lobortis dolor. Sed pellentesque, urna ac viverra lacinia, erat mauris venenatis
+                    purus, mollis egestas urna purus ac ex.
+                    Aenean nunc sem, lobortis at elit non, lobortis laoreet nibh. Maecenas at mi ipsum.
+                  </p>
+
+                  <p>
+                    Quisque tempor, ligula pharetra luctus elementum, arcu nisl suscipit ante, pharetra commodo dui est
+                    et enim. Sed eu vestibulum elit. Donec ut libero non.
+                  </p>
+                  <a href="./project.html" class="btn btn-primary" title="">
+                    Discover
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-responsive" src="/images/img-07.jpg" alt="First slide">
+                <div class="carousel-caption card-shadow reveal">
+
+                  <h3>Lbortis</h3>
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <p>
+                    Pre id tellus in risus pre
+                    tium imperdiet eu lobortis dolor. Sed pellentesque, urna ac viverra lacinia, erat mauris venenatis
+                    purus, mollis egestas urna purus ac ex.
+                    Aenean nunc sem, lobortis at elit non, lobortis laoreet nibh. Maecenas at mi ipsum.
+                  </p>
+
+                  <p>
+                    Quisque tempor, ligula pharetra luctus elementum, arcu nisl suscipit ante, pharetra commodo dui est
+                    et enim. Sed eu vestibulum elit. Donec ut libero non.
+                  </p>
+                  <a href="./project.html" class="btn btn-primary" title="">
+                    Discover
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section-container">
+    <div class="container text-center">
+      <div class="row section-container-spacer">
+        <div class="col-xs-12 col-md-12">
+          <h2>Referrals</h2>
+          <p>Praesent at feugiat est, at faucibus ipsum. Aenean condimentum mauris vel malesuada pulvinar.
+            <br>Vestibulum sit amet hendrerit leo, quis vehicula mi.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <img src="/images/profil-01.jpg" alt="" class="reveal img-responsive reveal-content image-center">
+          <h3>Victor Aluko</h3>
+          <h4>Full Stack Developer</h4>
+          <p>Sed elementum vehicula nisl, a egestas velit rhoncus nec.Cras vel sapien tincidunt, lacinia risus vel,
+            imperdiet neque.</p>
+          <p>
+            <a href="https://facebook.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </p>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <img src="/images/profil-02.jpg" alt="" class="reveal img-responsive reveal-content image-center">
+          <h3>Stephen Kenigbolo</h3>
+          <h4>Frontend Team Lead</h4>
+          <p>Meya Stephen Kenigbolo has been working with BCaster for almost two years. At the same
+            time,
+            Kenigbolo enjoys sharing his knowledge voluntarily and speaks in events around the world.</p>
+          <p>
+            <a href="https://facebook.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </p>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <img src="/images/profil-03.jpg" alt="" class="reveal img-responsive reveal-content image-center">
+          <h3>Jide Arowolo</h3>
+          <h4>PhP Developer</h4>
+          <p>Busce rutrum nisi non dui placerat sodales. Vivamus feugiat rutrum malesuada. Nulla volutpat sapien ac
+            gravida varius</p>
+          <p>
+            <a href="https://facebook.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section-container contact-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="section-container-spacer">
+            <h2 class="text-center">Get in touch</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="card-container">
+            <div class="card card-shadow col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 reveal">
+              <form action="" class="reveal-content">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="3" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                  </div>
+                  <div class="col-md-5">
+                    <ul class="list-unstyled address-container">
+                      <li>
+                        <span class="fa-icon">
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                        </span>
+                        + 358 4524 3 5144
+                      </li>
+                      <li>
+                        <span class="fa-icon">
+                          <i class="fa fa fa-map-o" aria-hidden="true"></i>
+                        </span>
+                        00740 Helsinki, Finland
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="card-image col-xs-12" style="background-image: url('/images/img-01.jpg')">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- All JS files are included here.
     	============================================== -->
   <script>
@@ -94,7 +308,7 @@
     });
   </script>
   <!-- Main JS file that contents all jQuery Plugins activation. -->
-  <script type="text/javascript" src="./main.0cf8b554.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

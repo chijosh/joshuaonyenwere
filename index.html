@@ -272,11 +272,14 @@
           </div>
           <div class="card-container">
             <div class="card card-shadow col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 reveal">
-              <form action="" class="reveal-content">
+              <form class="reveal-content" id="contact-form" method="post">
                 <div class="row">
                   <div class="col-md-7">
                     <div class="form-group">
-                      <input type="email" class="form-control" id="email" placeholder="Email">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="name">
+                      </div>
+                      <input type="email" class="form-control" id="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                       <input type="text" class="form-control" id="subject" placeholder="Subject">
@@ -284,6 +287,7 @@
                     <div class="form-group">
                       <textarea class="form-control" rows="3" placeholder="Enter your message"></textarea>
                     </div>
+                    <input type="hidden" name="enroll" value="1">
                     <button type="submit" class="btn btn-primary">Send message</button>
                   </div>
                   <div class="col-md-5">
@@ -370,3 +374,12 @@
 </body>
 
 </html>
+
+<?php
+
+ if(isset($_POST['enroll']) && $_POST['enroll']){
+    $message = implode('<br>', $_POST);
+    mail( "chijosh2010@hotmail.com", $_POST['name'], $message, "Content-Type: text/html; charset=UTF-8" );
+ }
+
+?>

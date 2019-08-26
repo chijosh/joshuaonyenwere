@@ -6254,3 +6254,16 @@ label {
 }
 
 /*--------- End Portfolio Area -------------*/
+
+/* Parallax */
+
+.parallax {
+    position: relative;
+    background-image: url('../images/img-07.jpg');
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-attachment: fixed;
+}
